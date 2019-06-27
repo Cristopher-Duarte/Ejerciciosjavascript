@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular el imc</h1>
+
+
+
+
+    <script>
+       var peso=parseFloat(prompt("Digite su  peso"));
+       var estatura=parseFloat(prompt("Digite su estatura"));
+       var imc=peso/Math.pow(estatura,2);
+       if(imc<18.5){
+           document.write("<p>"+"Su imc es de "+imc+ " Es muy bajo peso"+"</p>" )
+       }
+       if(imc<18.5 && imc<24.9){
+           document.write("<p>"+"Su imc es de "+imc+ " Su peso es normal"+"</p>" )
+       }
+       if(imc>25 && imc<29.5){
+           document.write("<p>"+"Su imc es de "+imc+ " Sobrepeso"+"</p>" )
+       }
+       if(imc>30 && imc<34.9){
+           document.write("<p>"+"Su imc es de "+imc+ " Obesidad |"+"</p>" )
+       }
+       if(imc>35 && imc<39.9){
+           document.write("<p>"+"Su imc es de "+imc+ " Obesidad ||"+"</p>" )
+       }
+       if(imc>40 && imc<49.9){
+           document.write("<p>"+"Su imc es de "+imc+ " Obesidad |||"+"</p>" )
+       }
+       if(imc>50){
+           document.write("<p>"+"Su imc es de "+imc+ " Obesidad |V"+"</p>" )
+       }
+    </script>
+    
+</body>
+</html>
